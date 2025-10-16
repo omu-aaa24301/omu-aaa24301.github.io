@@ -5,10 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-  <p><a href="index.html">お勧めの食べ物を紹介しているサイトへのリンクはこちら</a></p>
-  <h1>お勧めの旅行先</h1>
-  <p>今回私がおすすめしたい旅行先は長野県の阿智村です。</p>
-  <p>阿智村は日本で最も星が綺麗に観測できる場所として知られており、秋や冬などの空気が乾燥した時期に見る星空は一度見ると忘れられません。</p>
-  <p>阿智村では温泉や伝統の餅づくり、BBQなどといった楽しめる要素がいっぱいで、家族や友人などと旅行するにはぴったりの場所です。</p>
-  <p>是非、一度長野県阿智村を訪れてみてください！</p>
+    <h2>BMI指標計算</h2>
+    <form oninput="bmi.value = Math.round(Number(weight.value) / Math.pow(Number(height.value)/100, 2) * 10) / 10">
+        <p><label>体重(kg)：<input name="weight" type="number" step="any"></label></p>
+        <p><label>身長(cm)：<input name="height" type="number" step="any"></label></p>
+        <p><label>BMI：<output name="bmi"></output></label></p>
+    </form>
+    
+    <p><a href="index.html">お勧めの食べ物を紹介しているサイトへのリンクはこちら</a></p>
+    <h1>お勧めの旅行先</h1>
+  　<p>今回私がおすすめしたい旅行先は長野県の阿智村です。</p>
+  　<p>阿智村は日本で最も星が綺麗に観測できる場所として知られており、秋や冬などの空気が乾燥した時期に見る星空は一度見ると忘れられません。</p>
+  　<p>阿智村では温泉や伝統の餅づくり、BBQなどといった楽しめる要素がいっぱいで、家族や友人などと旅行するにはぴったりの場所です。</p>
+  　<p>是非、一度長野県阿智村を訪れてみてください！</p>
 </body>
