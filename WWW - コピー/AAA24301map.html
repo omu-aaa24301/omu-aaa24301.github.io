@@ -66,16 +66,6 @@
             map.attributionControl.addAttribution(
                 '<a href="https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-P29-v2_0.html">国土数値情報・学校データ</a>',
             );
-
-            
-            fetch('./P29-21_27.geojson')
-                .then((res) => res.json())
-                .then((json) => {
-                    const markers = L.geoJSON(json)
-                        .bindPopup((layer) => layer.feature.properties.P29_004)
-                        map.addLayer(markers);
-                        LayerControl.addOverlay(markers, '学校');
-                });
             
 
             fetch("./line.geojson")
